@@ -43,12 +43,9 @@ h3{
     margin: 5px;
 }
 
-header1, header2, header3{
-        margin-top: 5px;
-        margin-bottom: 5px;
-        margin-right: 10px;
-        margin-left: 10px;
-}
+#header1, #header2, #header3{
+        margin: 5px 10px 50px 10px;
+} 
 
 /* 
     NOTE padding / margin
