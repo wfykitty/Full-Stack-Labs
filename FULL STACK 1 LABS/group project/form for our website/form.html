@@ -1,0 +1,91 @@
+ 
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta charset="utf-8">
+    <title>Favorite fruit start</title>
+    <link href="form.css rel="stylesheet" type="text/css">
+    <style>
+      input:invalid {
+        border: 2px dashed rgb(58, 20, 20);
+      }
+
+      input:valid {
+        border: 2px solid black;
+      }
+    </style>
+</head>
+
+<body>
+    <form>
+
+      <label> Your Name: <input type="text" name="name"></label>
+      <label> Your Email: <input type="email" name="_replyto"></label>
+      <br><br>
+      <label>
+
+        <label> Your Name: <input type="text" name="name"></label>
+        <br><br>
+        Please type your password: 
+        <input type="password" name="Secret password" required>
+        <br><br>
+        Please confirm your password: 
+        <input type="password" name="Secret password" required>
+        <br><br>
+        <label>Date of Birth: </label>
+        <input type="date" id="start" name="study-start"> 
+        <br><br>
+        <label> Your home address:
+          <input type="text" name="address"></label>
+          <br><br>
+      <label>Please select the education institution you attend  
+      <select name="Education Institution"> 
+        <option value="George Brown College">George Brown College</option>
+        <option value="Seneca College">Seneca College</option>
+        <option value="University of Alberta">University of Alberta</option>
+        <option value="The University of British Columbia">The University of British Columbia</option>
+        <option value="McGill University">McGill University</option>
+        <option value="University of Toronto">University of Toronto</option>
+        <option value="Humber College">University of Toronto</option>
+        <option value="Centennial College">Centennial College</option>
+        <option value="University of Windsor">University of Windsor</option>
+        <option value="York University">York University</option>
+        <option value="University of Waterloo">University of Waterloo</option>
+        <option value="University of Calgary">University of Calgary</option>
+        <option value="Concordia University">Concordia University</option>
+      </select>
+    </label>
+      <br><br>
+  
+      <label>If it is not in the list, please type in: </label>
+      <input type="text" name="name"> 
+      <br><br>
+      <label>Country: </label>
+      <input type="text" name="name" minlength="3" maxlength="20">
+      <label>City: </label>
+      <input type="text" name="city" minlength="3" maxlength="20">
+      <br><br>
+      <label>Years and dates of attendance</label><br><br>
+      <input type="date" id="start1" name="study-start"> to
+      <input type="date" id="end" name="study-start">
+      <br><br>
+      <label>Major area of study </label>
+      <input type="text" name="area">
+      <br><br>
+      <label>Diploma, degree or credential awarded: </label>
+      <input type="text" name="name" minlength="3" maxlength="20">
+      <br><br>
+      <label>Date awarded: </label>
+      <input type="date" id="Dateawarded" name="study-start" >
+      <br><br>
+      <br><br>
+      <input type="submit" value="Send">
+      </p>
+      <br><br>
+   
+ 
+</body>
+
+</html>
