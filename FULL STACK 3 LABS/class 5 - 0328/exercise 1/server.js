@@ -5,7 +5,7 @@ var http = require('http')
   , server;
 
 
-(server = http.createServer(function(req, res){
+server = http.createServer(function(req, res){
   
   var path = url.parse(req.url).pathname;
   switch (path){
@@ -20,40 +20,34 @@ var http = require('http')
 
     default: send404(res);
   }
-})),
+}),
 
-(send404 = function(res){
+send404 = function(res){
   res.writeHead(404);
   res.write('404');
   res.end();
-});
+};
 
 
 
-const hostname = '127.0.0.1';
 const port = 3000;
 
-server.listen(port, hostname, ()=> {
-  console.log(`Server running at http://${hostname}:${port}/`);
-})
+server.listen(port, () => console.log("Listening on port: " + port))
 
 // socket.io, setup
 var io = io.listen(server);
 
-io.on("connection", function(client) {
-  console.log("connection accepted.");
 
+io.on("connection", client => {
+  console.log("connection accepted.");
   //event listeners
-client.on("message", function(message) {
-  console.log(`received message: ${message} from client`);
+client.on('message', msg => {
+  console.log('message received: ' + msg);
   client.emit('msgreceived');
 });
 
-client.on("disconnect", function(message) {
-  console.log("disconnected..");
- 
-});
 
+client.on('disconnect', () => console.log('disconnected....'));
 });
 
 
