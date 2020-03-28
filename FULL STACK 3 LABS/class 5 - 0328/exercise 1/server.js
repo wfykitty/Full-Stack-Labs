@@ -57,7 +57,4 @@ client.on("disconnect", function(message) {
 });
 
 
-// next time, try to index properly
-// makes your life easier when you debug
-// noooooooo
-// do not do that....
+ 
