@@ -8,7 +8,9 @@ class DeleteStudent extends React.Component {
    
     this.state = {id: this.props.id}
 
-    this.handleSubmit = this.handleSubmit.bind(this); }
+    this.handleSubmit = this.handleSubmit.bind(this); 
+    
+  }
 
     handleSubmit = event => {event.preventDefault();
 
@@ -17,7 +19,7 @@ class DeleteStudent extends React.Component {
         .then(res => {
           console.log(res.data);
           this.props.onDeleteStudent(this.state.id);
-        });
+      });
     }
   
     render() {

@@ -1,6 +1,5 @@
 import React from 'react';
 import axios from "axios";
-import AddStudent from './AddStudent';
 import DeleteStudent from './DeleteStudent';
 
 
@@ -37,7 +36,7 @@ class UserList extends React.Component {
     render() {
         return (
           <ul>
-            {this.state.users.map((user,key) => (<li key={user.id}>
+            {this.state.users.map((user,key) => ( <li key={user.id} >
             {user.name.toString()}
             <DeleteStudent id={user.id} onDeleteStudent={this.handleDeleteStudent} />
             </li>))}
