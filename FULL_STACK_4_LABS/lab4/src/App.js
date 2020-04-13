@@ -9,6 +9,7 @@ class App extends React.Component {
     return( <>
  
     <AddStudent />  
+    
     <StudentList />
     
     </>)
