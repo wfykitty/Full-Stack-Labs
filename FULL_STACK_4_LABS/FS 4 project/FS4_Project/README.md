@@ -1,9 +1,5 @@
 MERN Stack Application for Fullstack Development IV - Blockchain Development Program
 ==================================================================================
-
-Team Members:
-                Feiya Wang 101036160
-                Zakariya Jasat 101092428
                 
 ## Getting Started
 ## FS3_Project                
